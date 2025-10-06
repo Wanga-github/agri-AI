@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="hero">
+        <h1>
+            <i class="fas fa-seedling"></i><br>
+            Predict Crop Yields with AI
+        </h1>
+        <p>
+            Leverage machine learning to forecast agricultural productivity and make data-driven decisions for sustainable farming.
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="{{ url_for('dashboard.predict_page') }}" class="btn btn-primary">
+                <i class="fas fa-rocket"></i> Start Prediction
+            </a>
+            <a href="{{ url_for('dashboard.dashboard') }}" class="btn btn-outline">
+                <i class="fas fa-chart-line"></i> View Analytics
+            </a>
+        </div>
+    </div>
+
+    <div class="row g-4 mt-5">
+        <div class="col-md-4" style="animation: fadeInUp 0.6s ease;">
+            <div class="glass feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h5>AI-Powered Analysis</h5>
+                <p>Advanced machine learning algorithms trained on extensive agricultural data for accurate yield predictions.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="animation: fadeInUp 0.8s ease;">
+            <div class="glass feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h5>Smart Insights</h5>
+                <p>Receive personalized recommendations for irrigation, fertilization, and resource optimization.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="animation: fadeInUp 1s ease;">
+            <div class="glass feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h5>Sustainable Impact</h5>
+                <p>Contributing to SDG 2: Zero Hunger through intelligent agriculture and reduced resource waste.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 pt-5">
+        <div class="col-lg-10 mx-auto">
+            <div class="glass" style="padding: 3rem; text-align: center;">
+                <h3 class="mb-4">How It Works</h3>
+                <div class="row g-4 mt-4">
+                    <div class="col-md-3">
+                        <div class="feature-icon" style="margin: 0 auto 1rem;">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h6>Input Data</h6>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            Enter soil, weather, and crop parameters
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-icon" style="margin: 0 auto 1rem;">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h6>AI Processing</h6>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            ML models analyze patterns and correlations
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-icon" style="margin: 0 auto 1rem;">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h6>Get Predictions</h6>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            Receive accurate yield forecasts
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-icon" style="margin: 0 auto 1rem;">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h6>Take Action</h6>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            Implement AI-driven recommendations
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
